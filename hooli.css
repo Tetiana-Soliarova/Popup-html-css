@@ -27,7 +27,6 @@ body {
 }
 
 .nav-icon :focus {
-  padding: 25px;
   border: 1px solid black;
 }
 
