@@ -20,6 +20,7 @@ body {
   list-style-type: none;
   display: block;
   border: 1px solid transparent;
+    
 }
 
 .nav-icon:hover {
@@ -27,8 +28,10 @@ body {
 }
 
 .nav-icon :focus {
+   padding: 25px; /*  стили наследуются .popup_menu :focus*/
   border: 1px solid black;
 }
+
 
 a {
   width: 100px; /**/
@@ -85,28 +88,27 @@ a {
 }
 
 .popup_menu {
-  height: 130px; /**/
+  height: 130px; 
   display: flex;
   justify-content: center;
   text-align: center;
   margin-top: 10px;
   margin-bottom: 10px;
-  /*width: 100px; */
   border: 1px solid transparent;
+  padding: 0px;
 }
 
 .popup_menu:hover {
   border: 1px solid rgb(190, 185, 185);
 }
 
-.popup_menu :focus {
-  border: 1px solid rgb(21, 21, 22);
-}
-
-.popup_menu :focus ~ img {
-  display: block;
-  margin-left: -20px;
-  margin-right: auto;
+.popup_menu :focus {   
+  padding : 0;
+    padding-bottom : 0;
+    padding-left : 0;
+    padding-right : 0;
+    padding-top : 10px;
+  border: 1px solid rgb(16, 16, 224);
 }
 
 .popup_menu img {
@@ -240,7 +242,7 @@ a {
   overflow-y: auto;
   scrollbar-gutter: stable;
   width: 400px;
-  height: 340px;
+  height: 370px;
   right: 350px;
   box-shadow: #666666;
   display: block;
